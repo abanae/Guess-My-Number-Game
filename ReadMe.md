@@ -1,8 +1,7 @@
 # Guess My Number:
 
 ## Description:
-The goal of this project is to simply guess a number between 1-20. On the input field you can type a number to check if you guessed the right number.A message will display wether you guessed the right number or if is too high or too low.User starts with a score of 20, as they guess the score will increase/decrease by 1 point. The Gme also keeps trck of the highest score.
- 
+The goal of this project is to simply guess a number between 1-20. On the input field you can type a number & click "Check". A message will display whether you guessed the right number or if it is too high or too low. User starts with a score of 20, as they guess the score will increase/decrease by 1 point. The Game also keeps track of the highest score.
 
    ### Table of Contents:
 
