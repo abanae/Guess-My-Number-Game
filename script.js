@@ -25,6 +25,11 @@ document.querySelector('.number').textContent = secretNumber;
           document.querySelector('.message').textContent='🎉 Correct Number!';
           document.querySelector('body').style.backgroundColor = '#40cd16';
           document.querySelector('.number').style.width = '30rem';
+           //High Score
+          if(score > highScore){
+              highScore = score;
+              document.querySelector('.highscore').textContent = highScore;
+          }
          
           //Too High/Too Low Input
       }else if(guess !== secretNumber){
@@ -36,6 +41,8 @@ document.querySelector('.number').textContent = secretNumber;
               document.querySelector('.score').textContent =score;
           }else{
               document.querySelector('.message').textContent = '💥You Lost!';
+              document.querySelector('.score').textContent = 0;
+              document.querySelector('body').style.backgroundColor = 'red';
           }
       }
  });
