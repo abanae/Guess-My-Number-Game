@@ -25,11 +25,17 @@ document.querySelector('.number').textContent = secretNumber;
           document.querySelector('.message').textContent='🎉 Correct Number!';
           document.querySelector('body').style.backgroundColor = '#40cd16';
           document.querySelector('.number').style.width = '30rem';
+         
           //Too High/Too Low Input
       }else if(guess !== secretNumber){
           //Ternary Condition
           if (score > 0){
               document.querySelector('.message').textContent = guess > secretNumber ? '📈 Too high!' : '📉 Too low!';
+              // Decreasing the value of score by 1
+              score --;
+              document.querySelector('.score').textContent =score;
+          }else{
+              document.querySelector('.message').textContent = '💥You Lost!';
           }
       }
  });
